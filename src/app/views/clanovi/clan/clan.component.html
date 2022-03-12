@@ -1,0 +1,36 @@
+<div class="member">
+  <div class="member__header">
+    <div class="quantity">{{ id }}</div>
+    <div class="title">
+      <span title="{{ ime }}"> {{ ime }}</span>
+    </div>
+    <div class="detail">
+      <app-button [style]="'gray'" [size]="'medium'" [radius]="'no'">
+        Detaljnije...
+      </app-button>
+    </div>
+  </div>
+  <div class="member__content">
+    <div class="name">
+      <span class="label">Ime i prezime:</span>
+      <span class="value"> {{ ime }}</span>
+    </div>
+    <div class="member-id">
+      <span class="label">ID knjige:</span>
+      <span class="value"> {{ knjiga.id }}</span>
+    </div>
+    <div class="member-id">
+      <span class="label">Autor knjige:</span>
+      <span class="value"> {{ knjiga.autor }}</span>
+    </div>
+    <div class="member-id">
+      <span class="label">Naslov knjige:</span>
+      <span class="value"> {{ knjiga.naslov }}</span>
+    </div>
+  </div>
+  <div class="member__footer">
+    <app-button [style]="'secondary'" [size]="'small'" [radius]="'small'">
+      Sačuvaj izmene
+    </app-button>
+  </div>
+</div>
