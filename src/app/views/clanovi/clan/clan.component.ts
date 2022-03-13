@@ -1,21 +1,23 @@
-import { Component, Input } from '@angular/core';
-import { Knjiga } from 'src/app/model/knjiga.model';
-import { BibliotekaService } from 'src/app/services/biblioteka.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { BibliotekaService } from '../../../services/biblioteka.service';
 
 @Component({
   selector: 'app-clan',
   templateUrl: './clan.component.html',
   styleUrls: ['./clan.component.scss'],
 })
-export class ClanComponent {
+export class ClanComponent implements OnInit {
   @Input() id: number = 0;
   @Input() ime: string = '';
-  @Input() knjiga: Knjiga;
+  @Input() knjiga: any;
 
-  constructor() {
+  public detaljnije = false;
+
+  constructor(private bibliotekaService: BibliotekaService) {}
+
+  ngOnInit() {}
+
+  public prikaziDetaljnije() {
+    this.detaljnije = !this.detaljnije;
   }
-
-  ngOnInit() {
-  }
-
 }
