@@ -10,6 +10,7 @@ export class KnjigaComponent implements OnInit {
   @Input() id: number = 0;
   @Input() autor: string = '';
   @Input() naslov: string = '';
+  
   public detaljnije = false;
 
   constructor(private bibliotekaService: BibliotekaService) {}
