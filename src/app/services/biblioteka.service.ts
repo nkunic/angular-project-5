@@ -6,17 +6,17 @@ import { Knjiga } from '../view/knjige/knjiga/knjiga.model';
 export class BibliotekaService {
   public knjige: Array<Knjiga> = [
     {
-      id: 1,
+      id: 0,
       autor: 'Haled Hoseini',
       naslov: 'Hiljadu čudesnih sunaca',
     },
     {
-      id: 2,
+      id: 1,
       autor: 'Džodi Pikol',
       naslov: 'Čuvar svoje sestre',
     },
     {
-      id: 3,
+      id: 2,
       autor: 'J.K.Rouling',
       naslov: 'Hari Poter i Red Feniksa',
     },
@@ -24,17 +24,17 @@ export class BibliotekaService {
 
   public clanovi: Array<Clan> = [
     {
-      id: 1,
+      id: 0,
       ime: 'Sabina Ćatović',
       knjiga: this.knjige[0],
     },
     {
-      id: 2,
+      id: 1,
       ime: 'Sonja Rajić',
       knjiga: this.knjige[1],
     },
     {
-      id: 3,
+      id: 2,
       ime: 'Marko Bogdanović',
       knjiga: this.knjige[2],
     },
