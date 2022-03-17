@@ -50,6 +50,16 @@
     .author + .name {
       margin-top: 0.3125rem;
     }
+    .name {
+      display: flex;
+      align-items: center;
+      .label + input {
+        margin-left: 0.3125rem;
+      }
+      input {
+        flex: 1;
+      }
+    }
   }
   .book__footer {
     display: flex;
