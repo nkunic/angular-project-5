@@ -28,7 +28,7 @@
       background-color: $secondarycolor-l-10;
       padding: 0.3125rem;
       cursor: pointer;
-      @include textmix($white, $bodyfont, 0.875rem, 1, 500, none);
+      @include textmix($white, $bodyfont, 0.875rem, normal, 500, none);
       @include ellipsis();
       span {
         @include ellipsis();
