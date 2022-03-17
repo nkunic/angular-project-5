@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Clan } from '../model/clan.model';
-import { Knjiga } from '../model/knjiga.model';
+import { Clan } from '../view/clanovi/clan/clan.model';
+import { Knjiga } from '../view/knjige/knjiga/knjiga.model';
 
 @Injectable()
 export class BibliotekaService {

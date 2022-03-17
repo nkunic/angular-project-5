@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Clan } from '../../model/clan.model';
 import { BibliotekaService } from '../../services/biblioteka.service';
+import { Clan } from './clan/clan.model';
 
 @Component({
   selector: 'app-clanovi',
@@ -8,7 +8,9 @@ import { BibliotekaService } from '../../services/biblioteka.service';
   styleUrls: ['./clanovi.component.scss'],
 })
 export class ClanoviComponent implements OnInit {
+
   public clanovi: Array<Clan>;
+  
   constructor(private bibliotekaService: BibliotekaService) {}
   ngOnInit() {
     this.clanovi = this.bibliotekaService.clanovi;

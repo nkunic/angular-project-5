@@ -1,5 +1,5 @@
 <div class="books">
-  <div class="books__item" *ngFor="let knjiga of knjige">
+  <div *ngFor="let knjiga of knjige" class="books__item">
     <app-knjiga
       [id]="knjiga.id"
       [autor]="knjiga.autor"
