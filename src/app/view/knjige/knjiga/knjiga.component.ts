@@ -10,7 +10,7 @@ export class KnjigaComponent implements OnInit {
   @Input() id: number = 0;
   @Input() autor: string;
   @Input() naslov: string;
-  
+
   public detaljnije = false;
 
   constructor(private bibliotekaService: BibliotekaService) {}
@@ -23,5 +23,6 @@ export class KnjigaComponent implements OnInit {
 
   public sacuvaj() {
     this.bibliotekaService.knjige[this.id].naslov = this.naslov;
+    this.detaljnije = !this.detaljnije;
   }
 }
